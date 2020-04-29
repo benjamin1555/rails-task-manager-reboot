@@ -1,0 +1,86 @@
+.main-container {
+  margin: 30px auto;
+  height: 700px;
+  width: 400px;
+  border-radius: 25px;
+}
+
+/*
+  HEADER
+*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  background: linear-gradient(90deg, rgba(185,251,255,1) 0%, rgba(0,204,255,1) 100%);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: white;
+}
+
+.header > h5 {
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+}
+
+.header a {
+  color: white;
+  &:hover {
+    color: #f4f4f4;
+  }
+}
+
+/*
+  SEARCH
+*/
+
+.search {
+  height: 70px;
+  background-color: #f7f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-bar {
+  width: 85%;
+  border-radius: 50px;
+  border: 0 solid white;
+  padding: 5px 30px;
+}
+
+input {
+  color: grey;
+  font-style: italic;
+  opacity: .8;
+}
+
+::placeholder {
+  font-style: italic;
+  color: grey;
+  opacity: .2;
+}
+
+/*
+  TASKS
+*/
+
+.tasks-box {
+  padding: 25px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.task p {
+  margin: 0;
+}

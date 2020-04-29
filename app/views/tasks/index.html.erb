@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="tasks-index-icon">
+    <%= link_to tasks_path do %>
+      <i class="fas fa-bars"></i>
+    <% end %>
+  </div>
+  <h5 class="">MY TASKS</h5>
+  <div class="calendar-icons">
+    <i class="far fa-calendar-alt"><a href=""></a></i>
+  </div>
+</div>
+
+<div class="search">
+  <input type="text" id="search-bar" placeholder="Search from list" />
+</div>
+
+<div class="tasks-box">
+  <div class="tasks">
+    <% @tasks.each do |task| %>
+      <div class="task">
+        <i class="far fa-circle"></i>
+        <p><%= task.title %></p>
+        <i class="fas fa-trash-alt"></i>
+      </div>
+    <% end %>
+  </div>
+</div>
+
