@@ -1,0 +1,23 @@
+<div class="task-show">
+  <div class="task-title">
+    <h5><%= @task.title %></h5>
+  </div>
+
+  <div class="task-details">
+    <p><%= @task.details %></p>
+
+    <% if @task.completed %>
+      <div class="alert alert-success mt-4" role="alert">
+        Task completed
+      </div>
+    <% end %>
+  </div>
+
+  <div class="task-buttons">
+    <%= link_to 'Edit', edit_task_path(@task), class: "btn btn-primary" %>
+    <%= link_to 'Delete', task_path(@task),
+                          method: :delete,
+                          data: { confirm: 'Are you sure?'},
+                          class: "btn btn-danger" %>
+  </div>
+</div>

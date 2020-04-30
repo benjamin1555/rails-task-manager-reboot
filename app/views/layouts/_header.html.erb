@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="tasks-index-icon">
+    <%= link_to tasks_path do %>
+      <i class="fas fa-bars"></i>
+    <% end %>
+  </div>
+  <h5 class="">MY TASKS</h5>
+
+  <%= link_to new_task_path do  %>
+    <div class="new-task-icon">
+      <i class="fas fa-plus"></i>
+    </div>
+  <% end %>
+</div>
+
+<div class="search">
+  <input type="text" id="search-bar" placeholder="Search from list" />
+</div>
